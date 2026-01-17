@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn | Skincare With Happy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #1E3A8A;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #ffffff;
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(80,0,0,0.05);
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1E3A8A;
+            font-weight: 500;
+        }
+
+        .nav-btn {
+            background: #4CAF50;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 80px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: #e9edf5;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            background: #FF8C00;
+            color: #fff;
+            border: none;
+            padding: 12px 26px;
+            font-size: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* EDUCATIONAL SECTIONS */
+        .sections {
+            padding: 60px 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .section img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+
+        .section-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .section-text h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .section-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* TRUST SECTION */
+        .trust {
+            padding: 60px 40px;
+            background: #e9edf5;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .trust div {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 6px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1E3A8A;
+            color: #fff;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <strong>Skincare With Happy</strong>
+    <nav>
+        <a href="shop.html">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="#">About</a>
+    </nav>
+    <a href="#" class="nav-btn">Account</a>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Learn More About Skincare</h1>
+        <p>
+            We believe that great skincare starts with knowledge. Dive deep into our expert skincare guides, tips, and resources to find the best solutions for your skin.
+        </p>
+        <button>Start Learning</button>
+    </div>
+    <div></div>
+</section>
+
+<section class="sections">
+    <h2 class="section-title">Skincare Tips and Guides</h2>
+    <div class="section">
+        <div>
+            <img src="https://via.placeholder.com/500x300" alt="Skincare Tips">
+        </div>
+        <div class="section-text">
+            <h3>Skincare Routine for Beginners</h3>
+            <p>Starting a skincare routine doesn't have to be overwhelming. Learn the basics of what products to use and in which order for healthy, glowing skin.</p>
+        </div>
+    </div>
+    <div class="section">
+        <div>
+            <img src="https://via.placeholder.com/500x300" alt="Skin Types">
+        </div>
+        <div class="section-text">
+            <h3>Understanding Different Skin Types</h3>
+            <p>Not all skin is the same! Learn how to identify your skin type and choose products that will enhance your natural beauty and provide effective results.</p>
+        </div>
+    </div>
+    <div class="section">
+        <div>
+            <img src="https://via.placeholder.com/500x300" alt="Skin Concerns">
+        </div>
+        <div class="section-text">
+            <h3>How to Address Common Skin Concerns</h3>
+            <p>Whether you're dealing with acne, dryness, or fine lines, we provide solutions to help target and manage common skin concerns.</p>
+        </div>
+    </div>
+</section>
+
+<section class="trust">
+    <div>
+        <h3>Clinically Guided</h3>
+        <p>We provide research-backed skincare routines that are proven to work.</p>
+    </div>
+    <div>
+        <h3>Education First</h3>
+        <p>Our goal is to empower you with the knowledge to make the right skincare choices.</p>
+    </div>
+    <div>
+        <h3>Trusted Experts</h3>
+        <p>Our skincare advice is crafted by dermatologists and experts in the field.</p>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <strong>Skincare With Happy</strong>
+        <p>Calm. Clear. Confident skin.</p>
+    </div>
+    <div>
+        <a href="shop.html">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div>
+        <p>Subscribe for skincare education</p>
+    </div>
+</footer>
+
+</body>
+</html>

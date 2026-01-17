@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shopping Basket | Skincare With Happy</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #1E3A8A;
+}
+
+/* NAVBAR */
+header {
+    background: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+.nav-btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* CART LAYOUT */
+.cart-container {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* CART ITEMS */
+.cart-items {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 100px 100px 40px;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-img {
+    background: #ddd;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.cart-item h4 {
+    margin: 0;
+}
+
+.cart-item input {
+    width: 60px;
+    padding: 6px;
+}
+
+.remove {
+    color: #F44336;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* SUMMARY */
+.summary {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.summary h3 {
+    margin-top: 0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    width: 100%;
+    background: #FF8C00;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* TRUST NOTE */
+.trust-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #4CAF50;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #1E3A8A;
+    color: white;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <strong>Skincare With Happy</strong>
+    <nav>
+        <a href="shop.html">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <a href="#" class="nav-btn">Account</a>
+</header>
+
+<div class="cart-container">
+
+    <!-- CART ITEMS -->
+    <section class="cart-items">
+        <h2>Your Basket</h2>
+
+        <div class="cart-item">
+            <div class="cart-img"></div>
+            <h4>Niacinamide Balancing Serum</h4>
+            <div>$30</div>
+            <input type="number" value="1" min="1">
+            <span class="remove">×</span>
+        </div>
+
+        <div class="cart-item">
+            <div class="cart-img"></div>
+            <h4>Gentle Cleanser</h4>
+            <div>$18</div>
+            <input type="number" value="2" min="1">
+            <span class="remove">×</span>
+        </div>
+
+    </section>
+
+    <!-- SUMMARY -->
+    <aside class="summary">
+        <h3>Order Summary</h3>
+
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span>$66</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Shipping</span>
+            <span>Calculated at checkout</span>
+        </div>
+
+        <div class="summary-row total">
+            <span>Total</span>
+            <span>$66</span>
+        </div>
+
+        <button class="checkout-btn">Proceed to Secure Checkout</button>
+
+        <div class="trust-note">
+            ✔ Payment is required before delivery
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div>
+        <strong>Skincare With Happy</strong>
+        <p>Calm. Clear. Confident skin.</p>
+    </div>
+
+    <div>
+        <p>Shop · Learn · About</p>
+    </div>
+
+    <div>
+        <p>Secure online payments only</p>
+    </div>
+</footer>
+
+</body>
+</html>

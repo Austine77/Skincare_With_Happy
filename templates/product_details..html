@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Details | Skincare With Happy</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #1E3A8A;
+}
+
+/* NAVBAR */
+header {
+    background: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+.nav-btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* PRODUCT HERO */
+.product-hero {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: #ffffff;
+}
+
+.product-image {
+    background: #ddd;
+    height: 360px;
+    border-radius: 6px;
+}
+
+.product-info h1 {
+    margin-top: 0;
+}
+
+.price {
+    color: #4CAF50;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.short-desc {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.quantity {
+    margin: 20px 0;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 6px;
+}
+
+.add-cart {
+    background: #FF8C00;
+    color: #fff;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* INFO SECTIONS */
+.details {
+    padding: 60px 40px;
+    background: #f9fafc;
+}
+
+.details h2 {
+    margin-bottom: 15px;
+}
+
+.details p, .details li {
+    line-height: 1.7;
+}
+
+/* TRUST BOX */
+.trust-box {
+    background: #e9edf5;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.trust-box div {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* RECOMMENDED */
+.section {
+    padding: 60px 40px;
+    background: #ffffff;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #f9fafc;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.product-img {
+    background: #ddd;
+    height: 140px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #1E3A8A;
+    color: white;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <strong>Skincare With Happy</strong>
+    <nav>
+        <a href="shop.html">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <a href="#" class="nav-btn">Account</a>
+</header>
+
+<!-- PRODUCT HERO -->
+<section class="product-hero">
+    <div class="product-image"></div>
+
+    <div class="product-info">
+        <h1>Niacinamide Balancing Serum</h1>
+        <div class="price">$30</div>
+
+        <p class="short-desc">
+            A lightweight serum formulated to support oil balance, strengthen the
+            skin barrier, and reduce the appearance of blemishes.
+        </p>
+
+        <div class="quantity">
+            Quantity:
+            <input type="number" value="1" min="1">
+        </div>
+
+        <button class="add-cart">Add to Cart</button>
+    </div>
+</section>
+
+<!-- PRODUCT DETAILS -->
+<section class="details">
+    <h2>Description</h2>
+    <p>
+        This serum is designed for acne-prone and sensitive skin types.
+        It helps improve texture while maintaining hydration and comfort.
+    </p>
+
+    <h2>Key Ingredients</h2>
+    <ul>
+        <li>Niacinamide (5%) – Supports barrier function</li>
+        <li>Zinc PCA – Helps control oil</li>
+        <li>Panthenol – Soothes irritation</li>
+    </ul>
+
+    <h2>How to Use</h2>
+    <p>
+        Apply 2–3 drops to clean skin after cleansing.
+        Use morning and evening before moisturizer.
+    </p>
+
+    <h2>Clinical & Safety Notes</h2>
+    <p>
+        Dermatologically tested. Suitable for sensitive skin.
+        Always patch test before first use.
+    </p>
+</section>
+
+<!-- TRUST SECTION -->
+<section class="trust-box">
+    <div>
+        <h3>Who It’s For</h3>
+        <p>Oily, acne-prone, and combination skin.</p>
+    </div>
+
+    <div>
+        <h3>Who Should Avoid</h3>
+        <p>Those with known niacinamide sensitivity.</p>
+    </div>
+
+    <div>
+        <h3>Routine Placement</h3>
+        <p>Cleanser → Serum → Moisturizer</p>
+    </div>
+</section>
+
+<!-- RECOMMENDED -->
+<section class="section">
+    <h2>Recommended Products</h2>
+
+    <div class="products">
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Gentle Cleanser</h4>
+            <p class="price">$18</p>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Barrier Repair Cream</h4>
+            <p class="price">$25</p>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>SPF 50 Mineral Sunscreen</h4>
+            <p class="price">$20</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <strong>Skincare With Happy</strong>
+        <p>Education-first skincare you can trust.</p>
+    </div>
+    <div>
+        <p>Shop · Learn · About</p>
+    </div>
+    <div>
+        <p>Secure online payment before delivery</p>
+    </div>
+</footer>
+
+</body>
+</html>

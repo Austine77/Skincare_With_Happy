@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout | Skincare With Happy</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #1E3A8A;
+}
+
+/* NAVBAR */
+header {
+    background: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+.nav-btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* CHECKOUT LAYOUT */
+.checkout-container {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* FORM */
+.checkout-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.checkout-form h2 {
+    margin-top: 0;
+}
+
+.checkout-form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* SUMMARY */
+.summary {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.summary h3 {
+    margin-top: 0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* PAY BUTTON */
+.pay-btn {
+    width: 100%;
+    margin-top: 20px;
+    background: #FF8C00;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* NOTICE */
+.notice {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #4CAF50;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #1E3A8A;
+    color: white;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <strong>Skincare With Happy</strong>
+    <nav>
+        <a href="shop.html">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <a href="#" class="nav-btn">Account</a>
+</header>
+
+<div class="checkout-container">
+
+    <!-- CUSTOMER INFO -->
+    <section class="checkout-form">
+        <h2>Checkout</h2>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Jane Doe">
+
+        <label>Email Address</label>
+        <input type="email" placeholder="jane@example.com">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+234">
+
+        <p class="notice">
+            Orders are processed only after successful online payment.
+        </p>
+    </section>
+
+    <!-- ORDER SUMMARY -->
+    <aside class="summary">
+        <h3>Order Summary</h3>
+
+        <div class="summary-row">
+            <span>Niacinamide Serum × 1</span>
+            <span>$30</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Gentle Cleanser × 2</span>
+            <span>$36</span>
+        </div>
+
+        <hr>
+
+        <div class="summary-row total">
+            <span>Total</span>
+            <span>$66</span>
+        </div>
+
+        <button class="pay-btn">
+            Pay Securely with Paystack
+        </button>
+
+        <div class="notice">
+            🔒 Secure payment · No cash on delivery
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div>
+        <strong>Skincare With Happy</strong>
+        <p>Education-first skincare you can trust.</p>
+    </div>
+
+    <div>
+        <p>Shop · Learn · About</p>
+    </div>
+
+    <div>
+        <p>All payments verified before order confirmation</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Filtered Products | Skincare With Happy</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #1E3A8A;
+}
+
+/* NAVBAR */
+header {
+    background: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+.nav-btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* CATEGORY HEADER */
+.category-header {
+    background: #e9edf5;
+    padding: 50px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.category-header h1 {
+    margin: 0;
+}
+
+/* FILTER TAGS */
+.filter-tags {
+    padding: 20px 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.filter-tags span {
+    padding: 6px 14px;
+    background: #1E3A8A;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+/* FILTER PANEL */
+.filters {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.filters h3 {
+    margin-bottom: 10px;
+}
+
+.filters select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+/* PRODUCT GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.product-img {
+    background: #ddd;
+    height: 140px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    margin: 5px 0;
+}
+
+.price {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.product-card button {
+    margin-top: 10px;
+    background: #FF8C00;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* BESTSELLERS */
+.section {
+    padding: 60px 40px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bestsellers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* FOOTER */
+footer {
+    background: #1E3A8A;
+    color: #fff;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <strong>Skincare With Happy</strong>
+    <nav>
+        <a href="shop.html">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <a href="#" class="nav-btn">Account</a>
+</header>
+
+<section class="category-header">
+    <div>
+        <h1>Acne Care Selection</h1>
+        <p>Clinically guided products formulated to support acne-prone skin.</p>
+    </div>
+</section>
+
+<div class="filter-tags">
+    <span>Acne</span>
+    <span>Oily Skin</span>
+    <span>Serums</span>
+</div>
+
+<div class="container">
+
+    <!-- FILTERS -->
+    <aside class="filters">
+        <h3>Refine</h3>
+
+        <select>
+            <option>Skin Type</option>
+            <option>Oily</option>
+            <option>Dry</option>
+            <option>Sensitive</option>
+        </select>
+
+        <select>
+            <option>Concern</option>
+            <option>Acne</option>
+            <option>Pigmentation</option>
+            <option>Aging</option>
+        </select>
+
+        <select>
+            <option>Product Type</option>
+            <option>Cleanser</option>
+            <option>Serum</option>
+            <option>Moisturizer</option>
+        </select>
+
+        <select>
+            <option>Ingredient</option>
+            <option>Salicylic Acid</option>
+            <option>Niacinamide</option>
+            <option>Retinol</option>
+        </select>
+    </aside>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Clarifying Cleanser</h4>
+            <p class="price">$20</p>
+            <button>View</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Niacinamide Serum</h4>
+            <p class="price">$30</p>
+            <button>View</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Oil Control Gel</h4>
+            <p class="price">$24</p>
+            <button>View</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Spot Treatment</h4>
+            <p class="price">$18</p>
+            <button>View</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Barrier Repair Lotion</h4>
+            <p class="price">$26</p>
+            <button>View</button>
+        </div>
+
+    </section>
+
+</div>
+
+<section class="section">
+    <h2>Try Our Bestsellers</h2>
+    <div class="bestsellers">
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Acne Defense Kit</h4>
+            <p class="price">$55</p>
+        </div>
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Daily Clear Set</h4>
+            <p class="price">$48</p>
+        </div>
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h4>Oil Balance Duo</h4>
+            <p class="price">$42</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <strong>Skincare With Happy</strong>
+        <p>Education-first skincare you can trust.</p>
+    </div>
+    <div>
+        <p>Shop · Learn · About</p>
+    </div>
+    <div>
+        <p>Secure online payments only</p>
+    </div>
+</footer>
+
+</body>
+</html>

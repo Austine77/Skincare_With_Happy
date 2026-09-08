@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Skincare With Happy — premium skincare essentials for healthy, happy skin, delivered across Nigeria.">
+  <title>Skincare With Happy | Premium Skincare Store</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <section class="home-hero">
+      <div class="container home-hero-grid">
+        <div class="home-hero-copy">
+          <span class="pill">✨ Your skin, your happy place</span>
+          <h1>Beautiful skin starts with a <span>happy routine.</span></h1>
+          <p class="hero-lead">Discover carefully selected cleansers, serums, moisturizers and sun protection made for everyday routines. Simple choices, trusted quality and skincare you will love to use.</p>
+          <div class="hero-actions">
+            <a class="btn" href="./shop/">Shop skincare</a>
+            <a class="btn secondary" href="./collections/">Explore collections <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-trust">
+            <div><strong>✓</strong><span>Quality-first products</span></div>
+            <div><strong>✓</strong><span>Secure Paystack checkout</span></div>
+            <div><strong>✓</strong><span>Made for everyday care</span></div>
+          </div>
+        </div>
+        <div class="home-hero-visual">
+          <div class="hero-main-photo">
+            <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=1200&q=85" alt="Skincare bottles and beauty products">
+          </div>
+          <div class="hero-float-card hero-float-top">
+            <span class="float-icon">✦</span>
+            <div><strong>Skin first.</strong><small>Glow naturally.</small></div>
+          </div>
+          <div class="hero-float-card hero-float-bottom">
+            <div class="mini-avatars"><span>H</span><span>♥</span><span>+</span></div>
+            <div><strong>Loved by shoppers</strong><small>Carefully curated essentials</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-benefits">
+      <div class="container benefit-grid">
+        <div class="benefit"><span>01</span><div><strong>Curated skincare</strong><p>Essentials selected for simple, consistent routines.</p></div></div>
+        <div class="benefit"><span>02</span><div><strong>Easy online shopping</strong><p>Find your products, add to cart and checkout in minutes.</p></div></div>
+        <div class="benefit"><span>03</span><div><strong>Secure payments</strong><p>Pay confidently through our protected Paystack flow.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section home-categories">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="pill">Shop by concern</span><h2>A routine for every skin-care moment.</h2></div>
+          <p>Build a routine around the products your skin needs most, from a fresh cleanse to daily hydration and protection.</p>
+        </div>
+        <div class="grid-3 category-grid">
+          <a class="image-card category-card" href="./shop/">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85" alt="Facial cleanser and skincare products">
+            <div><span>01 · Cleanse</span><h3>Fresh & Clean</h3><p>Gentle cleansers for a clean, comfortable start.</p><b>Shop cleansers →</b></div>
+          </a>
+          <a class="image-card category-card" href="./shop/">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=85" alt="Skincare serum bottle">
+            <div><span>02 · Treat</span><h3>Targeted Glow</h3><p>Serums and treatments for your everyday routine.</p><b>Shop serums →</b></div>
+          </a>
+          <a class="image-card category-card" href="./shop/">
+            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85" alt="Moisturizer and skincare products">
+            <div><span>03 · Protect</span><h3>Hydrate & Protect</h3><p>Moisturizers and sunscreen for lasting daily care.</p><b>Shop essentials →</b></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-home">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="pill">Best sellers</span><h2>Skincare your routine will thank you for.</h2></div>
+          <a class="btn secondary" href="./shop/">View all products</a>
+        </div>
+        <div class="products" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="section routine-banner">
+      <div class="container">
+        <div class="promo home-promo">
+          <div>
+            <span class="pill promo-pill">The Happy Skin Method</span>
+            <h2>Cleanse. Treat. Hydrate. Protect.</h2>
+            <p>Keep your routine simple and consistent. Start with the essentials, then grow your routine as your skin needs change.</p>
+            <a class="btn secondary" href="./collections/" style="margin-top:22px">Build your routine</a>
+          </div>
+          <div class="promo-photo-stack">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=1000&q=85" alt="Premium skincare collection">
+            <div class="promo-note"><strong>Happy skin</strong><span>starts with consistency.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-final">
+      <div class="container">
+        <div class="home-final-card">
+          <div><span class="pill">Skincare With Happy</span><h2>Your everyday beauty shelf, made simpler.</h2><p>Explore our growing catalogue and find products that fit your routine, budget and lifestyle.</p></div>
+          <a class="btn dark" href="./shop/">Start shopping <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+  <script>layout('home');renderProducts(8);</script>
+</body>
+</html>

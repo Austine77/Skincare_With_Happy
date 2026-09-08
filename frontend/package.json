@@ -1,0 +1,9 @@
+{
+  "name": "skincare-with-happy-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "dev": "python -m http.server 3000"
+  }
+}

@@ -1,0 +1,13 @@
+require('dotenv').config();
+const {Pool}=require('pg'); const pool=new Pool({connectionString:process.env.DATABASE_URL,ssl:process.env.DATABASE_URL?.includes('localhost')?false:{rejectUnauthorized:false}});
+const products=[
+['Glow Balance Gentle Cleanser','glow-balance-gentle-cleanser','Cleansers','A gentle daily cleanser that removes dirt and excess oil without a harsh after-feel.',12500,15000,'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85',40],
+['Radiance Vitamin C Serum','radiance-vitamin-c-serum','Serums','A brightening facial serum designed for a fresh, radiant-looking complexion.',18500,22000,'https://images.unsplash.com/photo-1620916566398-39f1143ab7ba?auto=format&fit=crop&w=900&q=85',35],
+['Hydra Cloud Moisturizer','hydra-cloud-moisturizer','Moisturizers','Lightweight daily hydration for soft, comfortable skin.',16000,19500,'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=85',50],
+['Daily Shield SPF 50','daily-shield-spf-50','Sunscreen','Broad-spectrum daily sunscreen with a lightweight finish.',21000,25000,'https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85',30],
+['Clarify BHA Treatment','clarify-bha-treatment','Serums','A targeted exfoliating treatment for congested-looking skin.',17500,21000,'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=900&q=85',25],
+['Silk Body Butter','silk-body-butter','Body Care','Rich body moisturizer for smooth, nourished-looking skin.',14500,18000,'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85',45],
+['Lip Care Duo','lip-care-duo','Lip Care','A simple nourishing duo for everyday lip care.',8500,10000,'https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=900&q=85',60],
+['Happy Skin Starter Set','happy-skin-starter-set','Sets','A practical starter bundle for a simple cleanser, hydrate and protect routine.',42000,48000,'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=900&q=85',20]
+];
+(async()=>{try{await pool.query(require('fs').readFileSync(__dirname+'/init.sql','utf8'));for(const p of products){await pool.query(`INSERT INTO products(name,slug,category,description,price,old_price,image_url,stock) VALUES($1,$2,$3,$4,$5,$6,$7,$8) ON CONFLICT(slug) DO UPDATE SET name=EXCLUDED.name,category=EXCLUDED.category,description=EXCLUDED.description,price=EXCLUDED.price,old_price=EXCLUDED.old_price,image_url=EXCLUDED.image_url,stock=EXCLUDED.stock`,p)}console.log('Database initialized and products seeded.')}catch(e){console.error(e);process.exitCode=1}finally{await pool.end()}})();
